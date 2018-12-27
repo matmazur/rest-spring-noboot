@@ -6,14 +6,15 @@
 
     <groupId>com.matmazur</groupId>
     <artifactId>rest-spring-noboot</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1</version>
     <packaging>war</packaging>
+    <name>rest-spring-noboot</name>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>10</maven.compiler.source>
+        <maven.compiler.target>10</maven.compiler.target>
         <failOnMissingWebXml>false</failOnMissingWebXml>
-        <spring.version>5.0.6.RELEASE</spring.version>
+        <spring.version>5.0.9.RELEASE</spring.version>
         <servlet.version>3.1.0</servlet.version>
     </properties>
 
@@ -29,6 +30,14 @@
             <version>${servlet.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
     </dependencies>
 
+    <build>
+        <finalName>app</finalName>
+    </build>
 </project>
