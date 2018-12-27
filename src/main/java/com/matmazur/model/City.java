@@ -1,8 +1,5 @@
 package com.matmazur.model;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement
 public class City {
 
     private String name;
